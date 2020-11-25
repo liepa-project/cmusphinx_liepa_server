@@ -1,0 +1,6 @@
+[submodule "cmusphinx/sphinxbase"]
+	path = cmusphinx/sphinxbase
+	url = git@github.com:cmusphinx/sphinxbase.git
+[submodule "cmusphinx/pocketsphinx"]
+	path = cmusphinx/pocketsphinx
+	url = git@github.com:cmusphinx/pocketsphinx.git
