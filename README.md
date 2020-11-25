@@ -1,7 +1,11 @@
 # cmusphinx_liepa_server
-Automated recognition server based on cmu sphinx and liepa models 
+Automated recognition server based on cmu sphinx and liepa models. This demonstrate how can be exernalized recogntion from single board computers(or other underpower programable devices) to local network or internet dedicate resouces.
 
+#How it works
 
+This servier implemntation uses plain sockets to accept stream of raw audio data. The steam is processed by CMU pocketsphinx with Liepa project acoustic models. Oversimplified version of grammar is defined [https://github.com/liepa-project/cmusphinx_liepa_server/blob/main/model/LiepaASRResources/tikrinimo.gram] and dictionary [https://github.com/liepa-project/cmusphinx_liepa_server/blob/main/model/LiepaASRResources/tikrinimo.dict]
+
+In order to create your own dictionary go to [https://github.com/liepa-project/liepa_automatinis_fonemizavimas]. How to work with gramar read in documentation[https://www.w3.org/TR/2000/NOTE-jsgf-20000605/] or here [https://cmusphinx.github.io/wiki/tutoriallm/]
 
 # Build
 
@@ -27,6 +31,8 @@ Compile server:
 ```
 ./cmusphinx/pocketsphinx/autogen.sh
 ```
+
+#Use it
 
 
 Run server:
